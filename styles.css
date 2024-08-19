@@ -1,0 +1,90 @@
+/* Reset some default styling */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffe0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header_text {
+    font-size: 2.5em;
+    color: #ff5a5f;
+    margin-bottom: 10px;
+}
+
+.intro_text {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.gif_container {
+    margin: 20px 0;
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ff3b4e;
+}
+
+/* Responsive Design for iPhones */
+@media only screen and (max-device-width: 767px) {
+    .header_text {
+        font-size: 2em;
+    }
+
+    .intro_text {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (orientation: landscape) and (max-device-width: 767px) {
+    .header_text {
+        font-size: 1.8em;
+    }
+
+    .intro_text {
+        font-size: 0.9em;
+    }
+}
