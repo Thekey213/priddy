@@ -1,12 +1,12 @@
 /* Reset some default styling */
-body, h1, p, a {
+body, h1, p, a, input, button {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    background-color: #ffe0e0;
+    background-color: #ffccd5; /* Soft pink for Valentine theme */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 
 .header_text {
     font-size: 2.5em;
-    color: #ff5a5f;
+    color: #ff4d6d; /* Romantic pink */
     margin-bottom: 10px;
 }
 
@@ -45,22 +45,40 @@ body {
     border-radius: 10px;
 }
 
+/* Password Input Field */
+#password {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ff5a5f;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    outline: none;
+}
+
+#password:focus {
+    border-color: #ff3b4e;
+}
+
+/* Button Styling */
 .btn {
     display: inline-block;
     background-color: #ff5a5f;
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 24px;
+    font-size: 1.1em;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
 }
 
 .btn:hover {
     background-color: #ff3b4e;
+    transform: scale(1.05);
 }
 
 /* Responsive Design for iPhones */
@@ -73,12 +91,18 @@ body {
         font-size: 1em;
     }
 
+    #password {
+        font-size: 1em;
+        padding: 8px;
+    }
+
     .btn {
-        font-size: 0.9em;
-        padding: 8px 16px;
+        font-size: 1em;
+        padding: 10px 20px;
     }
 }
 
+/* Landscape mode on mobile */
 @media (orientation: landscape) and (max-device-width: 767px) {
     .header_text {
         font-size: 1.8em;

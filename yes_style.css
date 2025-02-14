@@ -1,84 +1,141 @@
-body {
-    font-family: 'Nunito', sans-serif;
+/* General Reset */
+body, h1, h2, h3, p, button {
     margin: 0;
     padding: 0;
-    background-color: #ffe0e0;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+/* Background */
+body {
+    background-color: #ffe0e0; /* Soft romantic pink */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
+/* Main container */
 .container {
     text-align: center;
     max-width: 600px;
-    margin: 20px;
-    padding: 20px;
+    width: 100%;
+    padding: 25px;
     border-radius: 15px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff5a5f;
+    transition: transform 0.3s ease-in-out;
 }
 
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header Styles */
 .header_text {
     font-size: 36px;
     color: #ff5a5f;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
+/* Intro Text */
 .intro_text {
     font-size: 20px;
     color: #333;
+    margin-bottom: 15px;
 }
 
+/* Button Styling */
 .btn {
     background-color: #ff5a5f;
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease-in-out;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .btn:hover {
     background-color: #ff3b4e;
+    transform: scale(1.05);
 }
 
+/* Hidden Class */
 .hidden {
     display: none;
 }
 
+/* Message Section */
 #message {
     margin-top: 20px;
 }
 
+/* Surprise Section */
 .surprise_header {
     font-size: 28px;
     color: #ff5a5f;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .surprise_text {
     font-size: 18px;
     color: #333;
+    line-height: 1.6;
 }
 
+/* GIF Styling */
 .gif {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Message Text */
 .message_text {
     font-size: 20px;
     color: #ff5a5f;
     margin-top: 20px;
+    font-weight: bold;
 }
 
+/* Sub Header */
 .sub_header {
     font-size: 24px;
     color: #ff5a5f;
     margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header_text {
+        font-size: 28px;
+    }
+
+    .sub_header {
+        font-size: 22px;
+    }
+
+    .message_text {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
